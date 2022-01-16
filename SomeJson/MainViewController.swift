@@ -78,15 +78,15 @@ extension MainViewController {
         }.resume()
 }
     
-    private func buttonThreePressed() {
-        guard let url = URL(string: Link.thirdButton.rawValue) else { return }
-        
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let _ = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-        }.resume()
-    }
+//    private func buttonThreePressed() {
+//        guard let url = URL(string: Link.thirdButton.rawValue) else { return }
+//
+//        URLSession.shared.dataTask(with: url) { data, _, error in
+//            guard let _ = data else {
+//                print(error?.localizedDescription ?? "No error description")
+//                return
+//            }
+//
+//        }.resume()
+//    }
 }
