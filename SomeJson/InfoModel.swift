@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Info {
+struct TextBlock: Decodable {
     let userID: Int
     let title: String
     let body: String

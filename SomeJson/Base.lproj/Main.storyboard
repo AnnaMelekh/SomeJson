@@ -47,7 +47,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="pushButtonTwo" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0n-jU-FBh"/>
-                                            <segue destination="Lgc-N6-uaA" kind="presentation" id="KlU-gB-G6m"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHn-TN-Z0m">
@@ -125,7 +124,7 @@
             <objects>
                 <viewController id="Lgc-N6-uaA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K3F-nF-Eqa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="MFp-pv-t6w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
