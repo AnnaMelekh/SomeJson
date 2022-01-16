@@ -11,14 +11,20 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "button2segue" {
+        let textVC = segue.destination as? TextBlockViewController
+            textVC?.fetchText()
+    }
     }
 
+    
     @IBAction func pushButtonOne() {
     }
 
     @IBAction func pushButtonTwo() {
-        buttonTwoPressed()
+//        buttonTwoPressed()
     }
     
    

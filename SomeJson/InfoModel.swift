@@ -8,8 +8,8 @@
 import Foundation
 
 struct TextBlock: Decodable {
-    let userId: Int
-    let title: String
-    let body: String
+    let userId: Int?
+    let title: String?
+    let body: String?
  }
 
