@@ -61,8 +61,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="pushButtonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMS-qD-gCF"/>
-                                            <action selector="pushButtonTwo" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Tc-2l-Pz4"/>
+                                            <action selector="pushButtonThree" destination="BYZ-38-t0r" eventType="touchUpInside" id="WEU-fe-uJ2"/>
                                         </connections>
                                     </button>
                                 </subviews>

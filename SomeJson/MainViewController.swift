@@ -14,16 +14,19 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-//    @IBAction func pushButtonOne() {
-//    }
-//
+    @IBAction func pushButtonOne() {
+    }
+
     @IBAction func pushButtonTwo() {
         buttonTwoPressed()
     }
     
+   
     @IBAction func pushButtonThree() {
-    }
+        buttonThreePressed()
 
+    }
+    
 // MARK: - Private Methods
 private func successAlert() {
     DispatchQueue.main.async {
@@ -78,15 +81,25 @@ extension MainViewController {
         }.resume()
 }
     
-//    private func buttonThreePressed() {
-//        guard let url = URL(string: Link.thirdButton.rawValue) else { return }
-//
-//        URLSession.shared.dataTask(with: url) { data, _, error in
-//            guard let _ = data else {
-//                print(error?.localizedDescription ?? "No error description")
-//                return
-//            }
-//
-//        }.resume()
-//    }
+    private func buttonThreePressed() {
+        guard let url = URL(string: Link.thirdButton.rawValue) else { return }
+
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            
+            do {
+                let text = try JSONDecoder().decode(TextBlock.self, from: data)
+                self.successAlert()
+                print(text)
+            } catch {
+                self.failedAlert()
+                print(error.localizedDescription)
+            }
+
+        }.resume()
+    }
+    
 }
