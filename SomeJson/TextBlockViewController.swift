@@ -17,8 +17,8 @@ class TextBlockViewController: UIViewController {
         super.viewDidLoad()
        
         func configure(with textBlock: TextBlock){
-            self.titleLabel.text = textBlock.title
-            self.bodyLabel.text = textBlock.body
+            titleLabel.text = textBlock.title
+            bodyLabel.text = textBlock.body
        }
     }
     
