@@ -41,10 +41,11 @@ extension TextBlockViewController {
                 let text = try JSONDecoder().decode(TextBlock.self, from: data)
                 
                 DispatchQueue.main.async {
-                    func configure(with textBlock: TextBlock){
-                        self.titleLabel.text = textBlock.title
-                        self.bodyLabel.text = textBlock.body
-                    }
+                    
+//                    func configure(with textBlock: TextBlock){
+//                        self.titleLabel.text = textBlock.title
+//                        self.bodyLabel.text = textBlock.body
+//                    }
     
                 }
                
