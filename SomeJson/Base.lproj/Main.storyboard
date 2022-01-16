@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="r8h-9h-KT7">
-                                <rect key="frame" x="50" y="280.5" width="275" height="106"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="r8h-9h-KT7">
+                                <rect key="frame" x="50" y="280.5" width="275" height="181"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGa-4W-8pf">
                                         <rect key="frame" x="0.0" y="0.0" width="275" height="31"/>
@@ -32,7 +32,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="pushButtonOne" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGy-gz-2vt"/>
-                                            <segue destination="x8X-6j-NPp" kind="presentation" id="O64-PJ-9mR"/>
+                                            <segue destination="x8X-6j-NPp" kind="presentation" identifier="showImage" id="O64-PJ-9mR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVX-kt-dJh">
@@ -46,7 +46,24 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="pushButtonTwo" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0n-jU-FBh"/>
                                             <segue destination="Lgc-N6-uaA" kind="presentation" id="KlU-gB-G6m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHn-TN-Z0m">
+                                        <rect key="frame" x="0.0" y="150" width="275" height="31"/>
+                                        <color key="backgroundColor" red="0.61491090680000005" green="0.81769285250000001" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button 3"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pushButtonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMS-qD-gCF"/>
+                                            <action selector="pushButtonTwo" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Tc-2l-Pz4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -55,10 +72,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r8h-9h-KT7" secondAttribute="trailing" constant="50" id="AfI-rQ-A1m"/>
-                            <constraint firstItem="r8h-9h-KT7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I94-cs-C4A"/>
-                            <constraint firstItem="r8h-9h-KT7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="bqT-Ah-jbX"/>
-                            <constraint firstItem="r8h-9h-KT7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hiv-oe-EdA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="r8h-9h-KT7" secondAttribute="bottom" constant="205.5" id="A83-tE-f3c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r8h-9h-KT7" secondAttribute="trailing" constant="50" id="Je1-59-E9U"/>
+                            <constraint firstItem="r8h-9h-KT7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="KQI-6g-GgY"/>
+                            <constraint firstItem="r8h-9h-KT7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="236.5" id="TA6-UF-5QA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="5CI-Rr-g9S">
@@ -140,6 +157,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
