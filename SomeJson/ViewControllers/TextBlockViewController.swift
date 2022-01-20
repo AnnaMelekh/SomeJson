@@ -6,6 +6,8 @@
 //
 
 import UIKit
+//import Alamofire
+
 
 class TextBlockViewController: UIViewController {
     
@@ -20,37 +22,36 @@ class TextBlockViewController: UIViewController {
             titleLabel.text = textBlock.title
             bodyLabel.text = textBlock.body
        }
+
     }
-    
-    
-    
-
 }
-
+    
+    
 extension TextBlockViewController {
-//    func fetchText(){
-//        guard let url = URL(string: Link.secondButton.rawValue) else { return }
-//
-//        URLSession.shared.dataTask(with: url) { data, _, error in
-//            guard let data = data else {
-//                print(error?.localizedDescription ?? "No error description")
-//                return
-//            }
-//
-//
-//            do {
-//                let text = try JSONDecoder().decode(TextBlock.self, from: data)
-//
-//                DispatchQueue.main.async {
-//
-//                    self.titleLabel.text = text.title
-//                    self.bodyLabel.text = text.body
-//                }
-//
-//            } catch {
-//        print(error.localizedDescription)
-//    }
-//
-//}.resume()
-//}
+ func fetchText(){
+    guard let url = URL(string: Link.secondButton.rawValue) else { return }
+    
+    URLSession.shared.dataTask(with: url) { data, _, error in
+        guard let data = data else {
+            print(error?.localizedDescription ?? "No error description")
+            return
+        }
+        
+        
+        do {
+            let text = try JSONDecoder().decode(TextBlock.self, from: data)
+            
+            DispatchQueue.main.async {
+
+                self.titleLabel.text = text.title
+                self.bodyLabel.text = text.body
+            }
+            
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+    }.resume()
 }
+}
+
