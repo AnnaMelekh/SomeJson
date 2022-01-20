@@ -12,3 +12,16 @@ enum Link: String {
     case secondButton = "https://jsonplaceholder.typicode.com/posts/2"
     case thirdButton = "https://jsonplaceholder.typicode.com/posts/1"
 }
+
+enum NetworkError: Error {
+    case invalidURL
+    case noData
+    case decodingError
+}
+
+class NetworkManager {
+    static let shared = NetworkManager()
+    
+    private init() {}
+
+
