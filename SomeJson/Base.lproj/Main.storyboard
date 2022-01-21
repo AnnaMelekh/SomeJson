@@ -162,6 +162,10 @@
                             <constraint firstItem="KAE-xW-PXI" firstAttribute="trailing" secondItem="HYx-2c-VD1" secondAttribute="trailing" constant="30" id="xNr-tC-icQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bodyLabel" destination="80f-vF-aWh" id="03a-Qi-tpB"/>
+                        <outlet property="titleLabel" destination="CVU-6Y-n71" id="nks-iA-kdg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1W7-wy-aRs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
