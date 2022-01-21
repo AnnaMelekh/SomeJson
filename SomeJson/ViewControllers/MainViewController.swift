@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class MainViewController: UIViewController {
 
@@ -16,6 +17,9 @@ class MainViewController: UIViewController {
         if segue.identifier == "button2segue" {
         let textVC = segue.destination as? TextBlockViewController
             textVC?.fetchText()
+    } else if segue.identifier == "button3segue" {
+        let textVC = segue.destination as? ThirdViewController
+//            textVC?.fetchText()
     }
     }
 
@@ -88,24 +92,32 @@ extension MainViewController {
 }
     
     private func buttonThreePressed() {
-        guard let url = URL(string: Link.thirdButton.rawValue) else { return }
-
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
+        
+        AF.request(Link.thirdButton.rawValue)
+            .responseJSON { dataResponse in
+                print(dataResponse)
             }
-            
-            do {
-                let text = try JSONDecoder().decode(TextBlock.self, from: data)
-                self.successAlert()
-                print(text)
-            } catch {
-                self.failedAlert()
-                print(error.localizedDescription)
-            }
-
-        }.resume()
+        
     }
-    
 }
+        
+//guard let url = URL(string: Link.thirdButton.rawValue) else { return }
+
+//        URLSession.shared.dataTask(with: url) { data, _, error in
+//            guard let data = data else {
+//                print(error?.localizedDescription ?? "No error description")
+//                return
+//            }
+//
+//            do {
+//                let text = try JSONDecoder().decode(TextBlock.self, from: data)
+//                self.successAlert()
+//                print(text)
+//            } catch {
+//                self.failedAlert()
+//                print(error.localizedDescription)
+//            }
+//
+//        }.resume()
+//    }
+    

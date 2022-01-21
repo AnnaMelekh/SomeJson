@@ -18,6 +18,7 @@
 		F31BA8712794AD0E00D2F4E0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31BA8702794AD0E00D2F4E0 /* NetworkManager.swift */; };
 		F31BA8752794B7AA00D2F4E0 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31BA8742794B7AA00D2F4E0 /* InfoModel.swift */; };
 		F31BA8772794D37100D2F4E0 /* TextBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31BA8762794D37100D2F4E0 /* TextBlockViewController.swift */; };
+		F31BA882279A2C5600D2F4E0 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31BA881279A2C5600D2F4E0 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F31BA8702794AD0E00D2F4E0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F31BA8742794B7AA00D2F4E0 /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
 		F31BA8762794D37100D2F4E0 /* TextBlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBlockViewController.swift; sourceTree = "<group>"; };
+		F31BA881279A2C5600D2F4E0 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				F31BA85E2794A88200D2F4E0 /* MainViewController.swift */,
 				F31BA8762794D37100D2F4E0 /* TextBlockViewController.swift */,
 				F31BA86E2794ABD600D2F4E0 /* ImageViewController.swift */,
+				F31BA881279A2C5600D2F4E0 /* ThirdViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				F31BA85B2794A88200D2F4E0 /* AppDelegate.swift in Sources */,
 				F31BA86F2794ABD600D2F4E0 /* ImageViewController.swift in Sources */,
 				F31BA85D2794A88200D2F4E0 /* SceneDelegate.swift in Sources */,
+				F31BA882279A2C5600D2F4E0 /* ThirdViewController.swift in Sources */,
 				F31BA8752794B7AA00D2F4E0 /* InfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -63,6 +63,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="pushButtonThree" destination="BYZ-38-t0r" eventType="touchUpInside" id="WEU-fe-uJ2"/>
+                                            <segue destination="Hn6-1U-qoj" kind="presentation" identifier="button3segue" id="qgT-Gl-Gzt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -118,6 +119,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFD-gJ-dEj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1748" y="-81"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="vUO-Et-jXu">
+            <objects>
+                <viewController id="Hn6-1U-qoj" customClass="ThirdViewController" customModule="SomeJson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XVs-g9-tu6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="HYx-2c-VD1">
+                                <rect key="frame" x="30" y="180" width="315" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVU-6Y-n71">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80f-vF-aWh">
+                                        <rect key="frame" x="0.0" y="54.5" width="315" height="20.5"/>
+                                        <color key="backgroundColor" red="0.52364724129999995" green="0.69633275589999999" blue="0.73310647549999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KAE-xW-PXI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HYx-2c-VD1" firstAttribute="leading" secondItem="KAE-xW-PXI" secondAttribute="leading" constant="30" id="IOl-NQ-hJO"/>
+                            <constraint firstItem="KAE-xW-PXI" firstAttribute="bottom" secondItem="HYx-2c-VD1" secondAttribute="bottom" constant="392" id="WaI-YT-6bw"/>
+                            <constraint firstItem="HYx-2c-VD1" firstAttribute="top" secondItem="KAE-xW-PXI" secondAttribute="top" constant="180" id="mbG-G5-Kxx"/>
+                            <constraint firstItem="KAE-xW-PXI" firstAttribute="trailing" secondItem="HYx-2c-VD1" secondAttribute="trailing" constant="30" id="xNr-tC-icQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1W7-wy-aRs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="777"/>
         </scene>
         <!--Text Block View Controller-->
         <scene sceneID="ZsF-pB-Xu2">
